@@ -74,11 +74,11 @@ document.addEventListener("DOMContentLoaded", function () {
         list.appendChild(item);
         document.getElementById("myList").appendChild(list);
         itemCount++;
-        
+
         list.addEventListener("click", function (e) {
             list.style.color = colorChoice[Math.floor(Math.random() * colorChoice.length)];
         });
-        
+
         list.addEventListener("dblclick", function (e) {
             list.remove(item++)
         });

@@ -65,14 +65,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     let itemCount = 1;
-
     let button = document.getElementById("button");
+    let myList = document.createElement("ul");
+    document.body.appendChild(myList);
 
     button.addEventListener("click", function (e) {
         let list = document.createElement("LI");
         let item = document.createTextNode("this is list item " + itemCount);
         list.appendChild(item);
-        document.getElementById("myList").appendChild(list);
+        myList.appendChild(list);
         itemCount++;
 
         list.addEventListener("click", function (e) {
